@@ -3,11 +3,11 @@ var router = express.Router();
 var SpotifyWebApi = require('spotify-web-api-node');
 
 var spotifyApi = new SpotifyWebApi({
-    clientId: '77c3ba459a6d40c8954d091480bc5b45',
-    clientSecret: '475cefdfeddc4c27aa60a385b404a0c7',
+    clientId: 'accd32a9a303403dafbc681b9d202434',
+    clientSecret: '0e601561cd6e4035b7fa4d24c0990566',
     redirectUri: 'http://www.example.com/callback',
   });
-  spotifyApi.setAccessToken('BQB_9BJwza6rRf-LA_ffZCqKfwHJrC7K2BuUv9gUw01VAi3-6epTpoowh1FQfJg7Ee2nVor5BuImrMnENf9iRjNg3U6Whmmf23lmj6o4chp69_3c0dvfZ2UYtNM7zrQccxacs0swe6zoAq2Idwnepuahi_J6KSw4uSox0u9F3mbdgaHpuyk');
+  spotifyApi.setAccessToken('BQBJSkY4bTuupzvx23hduReZV1_rGBnbXcmJwWwKoL3WsOYqx16T0VaVnyKvMa1sFGtta1xUB7AUtVe2S0jzz9ullBgGJdlmnsyo8hzB4yWp6-oF_F5UpNNpEzymDm7c3pRuXUUhpE0654Gc5qAlYZtaUoVHARw8MZYBcAniLf-Q6YmiKyo');
 router.get("/", function(req, res) {    
     res.render('search')
 });
